@@ -5,7 +5,7 @@ var checkout = new RegExp("/")
 var path = readline.question("path:")
 var IsFile = checkout.test(path)
 if(IsFile){}else{
-    path = './'+path
+    path = '../'+path
 }
 if(fs.existsSync(path)){
 }else{
